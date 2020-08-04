@@ -4,11 +4,7 @@ const checkForSpam = function (message) {
   // твой код
   const arr = message.toLowerCase();
 
-  if (arr.includes("spam") || arr.includes("sale")) {
-    return true;
-  } else {
-    return false;
-  }
+  return arr.includes("spam") || arr.includes("sale");
 };
 
 /*
